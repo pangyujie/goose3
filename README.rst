@@ -49,7 +49,7 @@ Take it for a spin
 
 ::
 
-    >>> from goose import Goose
+    >>> from goose3 import Goose
     >>> url = 'http://edition.cnn.com/2012/02/22/world/europe/uk-occupy-london/index.html?hpt=ieu_c2'
     >>> g = Goose()
     >>> article = g.extract(url=url)
@@ -92,7 +92,7 @@ tags:
 
 ::
 
-    >>> from goose import Goose
+    >>> from goose3 import Goose
     >>> url = 'http://sociedad.elpais.com/sociedad/2012/10/27/actualidad/1351332873_157836.html'
     >>> g = Goose()
     >>> article = g.extract(url=url)
@@ -106,7 +106,7 @@ configuration :
 
 ::
 
-    >>> from goose import Goose
+    >>> from goose3 import Goose
     >>> url = 'http://www.elmundo.es/elmundo/2012/10/28/espana/1351388909.html'
     >>> g = Goose({'use_meta_language': False, 'target_language':'es'})
     >>> article = g.extract(url=url)
@@ -122,7 +122,7 @@ Video extraction
 
 ::
 
-    >>> import goose
+    >>> import goose3
     >>> url = 'http://www.liberation.fr/politiques/2013/08/12/journee-de-jeux-pour-ayrault-dans-les-jardins-de-matignon_924350'
     >>> g = goose.Goose({'target_language':'fr'})
     >>> article = g.extract(url=url)
@@ -150,8 +150,8 @@ passed to the config object.
 
 ::
 
-    >>> from goose import Goose
-    >>> from goose.text import StopWordsChinese
+    >>> from goose3 import Goose
+    >>> from goose3.text import StopWordsChinese
     >>> url  = 'http://www.bbc.co.uk/zhongwen/simp/chinese_news/2012/12/121210_hongkong_politics.shtml'
     >>> g = Goose({'stopwords_class': StopWordsChinese})
     >>> article = g.extract(url=url)
@@ -170,8 +170,8 @@ class.
 
 ::
 
-    >>> from goose import Goose
-    >>> from goose.text import StopWordsArabic
+    >>> from goose3 import Goose
+    >>> from goose3.text import StopWordsArabic
     >>> url = 'http://arabic.cnn.com/2013/middle_east/8/3/syria.clashes/index.html'
     >>> g = Goose({'stopwords_class': StopWordsArabic})
     >>> article = g.extract(url=url)
@@ -187,8 +187,8 @@ class.
 
 ::
 
-    >>> from goose import Goose
-    >>> from goose.text import StopWordsKorean
+    >>> from goose3 import Goose
+    >>> from goose3.text import StopWordsKorean
     >>> url='http://news.donga.com/3/all/20131023/58406128/1'
     >>> g = Goose({'stopwords_class':StopWordsKorean})
     >>> article = g.extract(url=url)
